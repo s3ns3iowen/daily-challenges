@@ -3,16 +3,16 @@
 
 // For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
-var array = [10, 15, 3, 7];
-arraySum(array);
 function arraySum(array, k){
     for (i = 0; i < array.length; i++) {
         for (j = 0; j < array.length; j++){
             if (array[i] + array[j] == k) {
-                return true;
+                console.log("There is a match!");
                 break
             }
         }
     }
 }
-arraySum(array, 17);
+
+var array1 = [10, 15, 3, 7];
+arraySum(array1, 17);
